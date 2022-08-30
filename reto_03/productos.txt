@@ -1,0 +1,50 @@
+[
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 1
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 2
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 3
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 4
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 5
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 6
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 7
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 8
+	}
+]
