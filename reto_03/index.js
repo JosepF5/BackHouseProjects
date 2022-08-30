@@ -11,7 +11,7 @@ app.get('/productos', (req, res) => {
 
 app.get('/productoRandom', (req, res) => {
   const nuevo= new Contenedor('./productos.txt')
-  nuevo.getAll().then(result=>res.send(result[Math.floor(Math.random() * (result.length - 1))]))
+  nuevo.getAll().then(result=>res.send(result[Math.floor(Math.random() * (result.length))]))
 }) 
 
 app.get('/*', (req, res) => {
