@@ -3,14 +3,13 @@ const Contenedor=require('./contenedor.js');
 const express = require('express')
 const app = express()
 const port = 8080
+const nuevo= new Contenedor('./productos.txt')
 
 app.get('/productos', (req, res) => {
-  const nuevo= new Contenedor('./productos.txt')
   nuevo.getAll().then(result=>res.send(result))
 })
 
 app.get('/productoRandom', (req, res) => {
-  const nuevo= new Contenedor('./productos.txt')
   nuevo.getAll().then(result=>res.send(result[Math.floor(Math.random() * (result.length))]))
 }) 
 
