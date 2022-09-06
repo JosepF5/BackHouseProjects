@@ -63,19 +63,19 @@ router.delete("/:id", (req, res) => {
 module.exports = router;
 
 /* 
-1.- Para el caso de que un producto no exista, se devolverá el objeto:
+1.- (check) Para el caso de que un producto no exista, se devolverá el objeto:
 { error : 'producto no encontrado' }
-2.- Implementar la API en una clase separada,
+2.- (check) Implementar la API en una clase separada,
 utilizando un array como soporte de persistencia en memoria.
-3.- Incorporar el Router de express en la url base '/api/productos'
+3.- (check) Incorporar el Router de express en la url base '/api/productos'
 y configurar todas las subrutas en base a este.
-4.- Crear un espacio público de servidor que contenga un documento
+4.- (check) Crear un espacio público de servidor que contenga un documento
 index.html con un formulario de ingreso de productos con los datos
 apropiados.
-5.- El servidor debe estar basado en express y debe implementar los
+5.- (check) El servidor debe estar basado en express y debe implementar los
 mensajes de conexión al puerto 8080 y en caso de error, representar
 la descripción del mismo.
-6.- Las respuestas del servidor serán en formato JSON.
+6.- (check) Las respuestas del servidor serán en formato JSON.
 La funcionalidad será probada a través de Postman y del formulario
 de ingreso.
  */

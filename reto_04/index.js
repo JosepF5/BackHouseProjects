@@ -12,6 +12,8 @@ app.get("/*", (req, res) => {
   res.send("Consulta /productos o /productoRandom bro. ");
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+server.on('error', (err) => console.log(err));

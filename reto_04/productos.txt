@@ -124,5 +124,23 @@
 		"price": "3599",
 		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
 		"id": 21
+	},
+	{
+		"nombre": "Book",
+		"price": 244,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 22
+	},
+	{
+		"nombre": "Book",
+		"price": 244,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 23
+	},
+	{
+		"nombre": "Book",
+		"price": 244,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 24
 	}
 ]
