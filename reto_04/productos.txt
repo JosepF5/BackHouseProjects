@@ -12,8 +12,8 @@
 		"id": 2
 	},
 	{
-		"nombre": "Book",
-		"price": 234,
+		"nombre": "XDDD",
+		"price": 699,
 		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
 		"id": 3
 	},
@@ -60,14 +60,14 @@
 		"id": 10
 	},
 	{
-		"nombre": "Book",
-		"price": 244,
+		"nombre": "XDDD",
+		"price": 699,
 		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
 		"id": 11
 	},
 	{
-		"nombre": "Book",
-		"price": 244,
+		"nombre": "XDDD",
+		"price": 699,
 		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
 		"id": 12
 	},
@@ -118,5 +118,11 @@
 		"price": "3599",
 		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
 		"id": 20
+	},
+	{
+		"nombre": "Josep",
+		"price": "3599",
+		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
+		"id": 21
 	}
 ]

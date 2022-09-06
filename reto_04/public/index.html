@@ -7,6 +7,7 @@
     <title>Agregar Producto</title>
   </head>
   <body>
+    <h1>Crear producto</h1>
     <form action="/api/productos" method="post">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" /><br /><br />
@@ -16,17 +17,5 @@
       <input type="text" id="thumbnail" name="thumbnail" /><br /><br />
       <input type="submit" value="Submit" />
     </form>
-
-    <form action="/api/productos/:id" method="put">
-        <label for="id">ID:</label>
-        <input type="number" id="id" name="id" /><br /><br />
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" /><br /><br />
-        <label for="price">Price:</label>
-        <input type="number" id="price" name="price" /><br /><br />
-        <label for="thumbnail">Thumbnail:</label>
-        <input type="text" id="thumbnail" name="thumbnail" /><br /><br />
-        <input type="submit" value="Submit" />
-      </form>
   </body>
 </html>
