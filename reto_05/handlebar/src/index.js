@@ -1,15 +1,26 @@
 const express = require("express");
 const app = express();
 const port = 8080;
-const productRouter=require('./routes/products')
+const router = express.Router();
+const {engine} = require('express-handlebars');
+const productRouter=require('./routes/products')(router);
 
-app.use('/static', express.static(__dirname + '/public'));
 app.use(express.json());
-app.use(express.urlencoded({ extended:false}));
-app.use('/api/productos',productRouter)
+app.use(express.urlencoded({ extended:true}));
+app.use('/productos',productRouter)
+
+app.set('views', './src/views');
+app.set('view engine', 'hbs');
+
+app.engine('hbs', engine({
+  extname: '.hbs',
+  defaultLayout: 'index.hbs',
+  layoutsDir: __dirname + '/views/layouts',
+  partialsDir: __dirname + '/views/partials'
+}))
 
 app.get("/*", (req, res) => {
-  res.send("Consulta /productos o /productoRandom bro. ");
+  res.render('pages/error', {})
 });
 
 const server = app.listen(port, () => {
