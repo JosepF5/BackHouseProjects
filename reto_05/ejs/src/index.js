@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended:true}));
 app.use('/productos',productRouter)
 
 app.set('views', './src/views');
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 
 app.get("/*", (req, res) => {
   res.render('pages/error', {})

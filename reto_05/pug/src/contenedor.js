@@ -45,7 +45,7 @@ class Contenedor {
   async getAll() {
     let txt = await fs.promises.readFile(this.path, "utf-8");
     let arreglo = JSON.parse(txt);
-    return arreglo.length !== 0 ? arreglo : "No hay productos.";
+    return arreglo.length !== 0 ? arreglo : [];
   }
   async deleteById(id) {
     let txt = await fs.promises.readFile(this.path, "utf-8");
