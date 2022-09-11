@@ -4,7 +4,6 @@ const port = 8080;
 const router = express.Router();
 const productRouter=require('./routes/products')(router);
 
-app.use('/static', express.static(__dirname + '/public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended:true}));
 app.use('/productos',productRouter)

@@ -15,7 +15,7 @@ module.exports = function (router) {
 
   router.post("/", urlencodedParser, async (req, res) => {
     await nuevo.save(req.body)
-    res.redirect('/crear');
+    res.redirect('/productos/crear');
   });
 
   return router;
