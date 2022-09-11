@@ -34,5 +34,17 @@
 		"price": "799",
 		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499344/g733-black-gallery-1_kideae.png",
 		"id": 6
+	},
+	{
+		"nombre": "Ingenieria de Sistemas",
+		"price": "1200",
+		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
+		"id": 7
+	},
+	{
+		"nombre": "Ingenieria Mecánica",
+		"price": "1200",
+		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
+		"id": 8
 	}
 ]
