@@ -28,5 +28,11 @@
 		"price": 234,
 		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
 		"id": 5
+	},
+	{
+		"nombre": "Josep",
+		"price": "799",
+		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
+		"id": 6
 	}
 ]
