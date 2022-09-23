@@ -1,0 +1,4 @@
+De los tres motores de plantillas implementados en este reto optare por handlebars debido a que es mas eficiente y gestionable
+por el hecho de usar una plantilla base para incorporar paginas distintas.
+Asmimismo, el incorporar sentencias logicas no altera el entendimiento del codigo HTML, el cual respeta la sintaxis de este a diferencia de pug y reduciendo
+el crear una declaracion de este como ejs. 
