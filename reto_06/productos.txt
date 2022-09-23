@@ -1,0 +1,50 @@
+[
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 1
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 2
+	},
+	{
+		"nombre": "XDDD",
+		"price": 699,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 3
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 4
+	},
+	{
+		"nombre": "Book",
+		"price": 234,
+		"thumbnail": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"id": 5
+	},
+	{
+		"nombre": "Guissela ",
+		"price": "799",
+		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499344/g733-black-gallery-1_kideae.png",
+		"id": 6
+	},
+	{
+		"nombre": "Ingenieria de Sistemas",
+		"price": "1200",
+		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
+		"id": 7
+	},
+	{
+		"nombre": "Ingenieria Mecánica",
+		"price": "1200",
+		"thumbnail": "https://res.cloudinary.com/reprogram/image/upload/v1644499346/xbox_qfrscw.png",
+		"id": 8
+	}
+]

@@ -6,7 +6,6 @@ module.exports = function (router) {
 
   router.get("/", async (req, res) => {
     const productos= await nuevo.getAll();
-    console.log(productos)
     res.render('pages/list', {productos})
   });
 
