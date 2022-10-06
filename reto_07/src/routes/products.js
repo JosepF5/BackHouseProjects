@@ -1,12 +1,18 @@
-module.exports = function (router) {
-  const bodyParser = require("body-parser");
-  const Contenedor = require("../contenedor.js");
-  const nuevo = new Contenedor("./productos.txt");
-  let urlencodedParser = bodyParser.urlencoded({ extended: false });
+const Contenedor = require("../contenedor.js");
+const Producto = require("../model/product");
+const nuevo = new Contenedor("./productos.json");
 
+module.exports = function (router) {
+
+  /* RENDERIZAR PAGINA DE PRODUCTOS 
   router.get("/", async (req, res) => {
     const productos = await nuevo.getAll();
     res.render("pages/list", { productos });
+  }); */
+
+  router.get("/", async (req, res) => {
+    const productos = await nuevo.getAll();
+    res.status(200).json(productos);
   });
 
   router.get("/:id", async (req, res) => {
@@ -18,24 +24,34 @@ module.exports = function (router) {
           .json({ error: "Ocurrió un error al encontrar el producto." });
   });
 
+  /* RENDERIZAR PAGINA DE CREACION DE PRODUCTOS
   router.get("/crear", async (req, res) => {
     res.render("pages/form", {});
-  });
+  }); */
 
-  router.post("/", urlencodedParser, async (req, res) => {
-    const {body} = req;
-    body.timestamp = Date.now();
-    await nuevo.save(body);
-    res.redirect("/productos/crear");
-  });
-
-  router.put("/:id", async (req, res) => {
-    const productUpdated = await nuevo.updateById(req.params.id - 1, req.body);
-    productUpdated
+  router.post("/", async (req, res) => {
+    const { body } = req;
+    (await nuevo.save(body, Producto(body)))
       ? res.status(200).send({ success: "Producto actualizado." })
       : res
           .status(404)
           .send({ error: "Ocurrió un error al encontrar el producto." });
+    /* res.redirect("/crear"); */
+  });
+
+  router.put("/:id", async (req, res) => {
+    const productUpdated = await nuevo.updateById(req.params.id, req.body);
+    if(Producto(req.body)){
+      productUpdated
+        ? res.status(200).send({ success: "Producto actualizado." })
+        : res
+            .status(404)
+            .send({ error: "Ocurrió un error al encontrar el producto." });
+        return
+    }
+    res
+      .status(404)
+      .send({ error: "Ocurrió un error al actualizar el producto." });
   });
 
   router.delete("/:id", async (req, res) => {
@@ -45,6 +61,13 @@ module.exports = function (router) {
       : res
           .status(404)
           .send({ error: "Ocurrió un error al encontrar el producto." });
+  });
+
+  router.get("/*", async (req, res) => {
+    res.status(404).json({
+      error: -2,
+      descripcion: `ruta ${req.originalUrl} método ${req.method} no implementada`,
+    });
   });
 
   return router;
