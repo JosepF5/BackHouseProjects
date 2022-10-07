@@ -16,52 +16,46 @@ class Contenedor {
     return model;
   }
   async getById(id) {
-    const txt = await fs.promises.readFile(this.path, "utf-8");
-    let arreglo = JSON.parse(txt);
-    const prod = arreglo.find((el) => el.id === Number(id));
-    return prod ? prod : false;
+    try {
+      return await databaseSqlite3("chats")
+        .select('*')
+        .where("id", id);
+    } catch (error) {
+      console.log(error);
+    }
   }
   async updateById(id, pro) {
-    const txt = await fs.promises.readFile(this.path, "utf-8");
-    let arreglo = JSON.parse(txt);
-    const index = arreglo.findIndex((el) => el.id === Number(id));
-    if (typeof index) {
-      arreglo[index] = { ...arreglo[index], ...pro };
-      await fs.promises.writeFile(
-        this.path,
-        JSON.stringify(arreglo, null, "\t")
-      );
+    try {
+      await databaseSqlite3("chats").update(pro).where("id", id);
       return true;
+    } catch (error) {
+      console.log(error);
     }
-    return false;
   }
   async getAll() {
     try {
-      return await databaseSqlite3("chats").select('*')
+      return await databaseSqlite3("chats").select("*");
     } catch (error) {
       console.log(error);
     }
   }
   async deleteById(id) {
-    const txt = await fs.promises.readFile(this.path, "utf-8");
-    let arreglo = JSON.parse(txt);
-    const index = arreglo.findIndex((data) => data.id === id);
-    if (index === id - 1) {
-      arreglo.splice(index, 1);
-      for (const x of Array(arreglo.length).keys()) {
-        arreglo[x].id = x + 1;
-      }
-      await fs.promises.writeFile(
-        this.path,
-        JSON.stringify(arreglo, null, "\t")
-      );
+    try {
+      await databaseSqlite3("chats").del().where("id", id);
+      console.log("El mensaje ha sido borrado con exito.");
       return true;
+    } catch (error) {
+      console.log(error);
     }
-    return false;
   }
   async deleteAll() {
-    await fs.promises.writeFile(this.path, "[]");
-    return "Productos eliminados.";
+    try {
+      await databaseSqlite3("chats").del();
+      console.log("Mensajes borrados con exito");
+      return true;
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 
