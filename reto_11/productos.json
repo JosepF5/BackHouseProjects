@@ -1,0 +1,52 @@
+[
+	{
+		"nombre": "Product 21",
+		"precio": "10",
+		"descripcion": "Nueva descripcion XD",
+		"codigo": "XP-1",
+		"foto": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"stock": "100",
+		"timestamp": 1664996227562,
+		"id": 1
+	},
+	{
+		"nombre": "Product 21",
+		"precio": "10",
+		"descripcion": "Some description for product 1",
+		"codigo": "XP-1",
+		"foto": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"stock": "100",
+		"timestamp": 1664997654849,
+		"id": 2
+	},
+	{
+		"nombre": "Product 21",
+		"precio": "10",
+		"descripcion": "Some description for product 1",
+		"codigo": "XP-1",
+		"foto": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"stock": "100",
+		"timestamp": 1664998134784,
+		"id": 3
+	},
+	{
+		"nombre": "Product SS",
+		"precio": "10",
+		"descripcion": "Nueva descripcion XD",
+		"codigo": "XP-1",
+		"foto": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"stock": "120",
+		"id": 4,
+		"timestamp": 1665037372215
+	},
+	{
+		"nombre": "Product SS",
+		"precio": "10",
+		"descripcion": "Nueva descripcion XD",
+		"codigo": "XP-1",
+		"foto": "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-512.png",
+		"stock": "120",
+		"id": 5,
+		"timestamp": 1665037515306
+	}
+]
